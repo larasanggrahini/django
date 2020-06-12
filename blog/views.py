@@ -199,7 +199,7 @@ class PostUpdateView(LoginRequiredMixin, UpdateView):
 
 class PostDeleteView(LoginRequiredMixin, DeleteView):
     model = Post
-    template_name = 'blog\post\post_confirm_delete.html'
+    template_name = 'blog/post/post_confirm_delete.html'
     success_url = reverse_lazy('blog:post_list')
     query_pk_and_slug = True
 
